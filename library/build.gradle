@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION as int
+        targetSdkVersion ANDROID_BUILD_TARGET_SDK_VERSION as int
+        consumerProguardFiles 'consumer-proguard-rules.pro'
+    }
+}
+
+dependencies {
+    provided 'com.android.support:support-core-utils:27.0.0'
+    provided 'io.reactivex:rxjava:1.3.2'
+    provided 'io.reactivex:rxandroid:1.2.1'
+    provided 'com.squareup.retrofit2:retrofit:2.3.0'
+    provided 'com.squareup.retrofit2:converter-gson:2.3.0'
+    provided 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+}
+
+// gradle clean build bintrayUpload
+//apply from: 'https://raw.githubusercontent.com/bingoogolapple/PublishAar/master/jcenter-release.gradle'

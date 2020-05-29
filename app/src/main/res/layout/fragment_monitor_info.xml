@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RadioGroup
+                android:id="@+id/radioG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="连接蓝牙设备的方式(请在连接前选定)：" />
+
+                <RadioButton
+                    android:id="@+id/radioB0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="直接连接设备" />
+
+                <RadioButton
+                    android:id="@+id/radioB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="从设备列表选择" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_clickConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_deviceId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_deviceKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/tv_deviceSoft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_deviceHard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已 绑定/关注 的设备列表" />
+
+                <com.datalife.datalife.widget.CustomRecyclerView
+                    android:id="@+id/mRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="LinearLayoutManager" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_BindDev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click unfollow device"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/tv_familylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取家庭成员列表"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+            <!--android:visibility="@{isLogin.get() ? View.VISIBLE:View.GONE}"-->
+
+            <Button
+                android:id="@+id/btn_ShowDownloadData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="从服务器获取已上传的测量数据"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="brush_head_circle">225</integer>
+
+    <dimen name="margin_brushhead_top">80dp</dimen>
+
+</resources>

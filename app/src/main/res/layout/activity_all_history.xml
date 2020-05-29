@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:datalife="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.datalife.datalife.widget.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        datalife:text_title="@string/history_record"
+        datalife:img_left="@mipmap/ic_back_white"
+        >
+    </com.datalife.datalife.widget.CustomTitleBar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_health_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_28"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15">
+    <ImageView
+        android:id="@+id/iv_health_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_history_health_monitor"
+        android:layout_centerInParent="true"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multifunction_health_monitor"
+            android:textSize="@dimen/text_18_size"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:textColor="@color/black_text_bg"
+            android:paddingLeft="@dimen/padding_30"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_alignBottom="@+id/iv_health_monitor"
+            android:paddingBottom="@dimen/padding_large"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/rl_health_fat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_28"
+    android:layout_marginLeft="@dimen/margin_15"
+    android:layout_marginRight="@dimen/margin_15">
+    <ImageView
+        android:id="@+id/iv_health_fat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_history_fat"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datalife_body_fat"
+        android:textSize="@dimen/text_18_size"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:textColor="@color/black_text_bg"
+        android:paddingLeft="@dimen/padding_large"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_alignBottom="@+id/iv_health_fat"
+        android:paddingBottom="@dimen/padding_large"
+        />
+
+</RelativeLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="customCalendar_currentDay_bg_DashPath">
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+    </array>
+
+    <array name="ecg_pager_speed">
+        <item>25mm/s</item>
+        <item>50mm/s</item>
+    </array>
+    <array name="ecg_calibration">
+        <item>5mm/mV</item>
+        <item>10mm/mV</item>
+        <item>20mm/mV</item>
+    </array>
+
+    <string-array name="data_type">
+        <item>"血压（BP）"</item>
+        <item>"体温（BT）"</item>
+        <item>"血氧（SPO₂H）"</item>
+        <item>"心电图（ECG）"</item>
+    </string-array>
+
+    <!--***********************扫描蓝牙设备的设备名前缀白名单数组***********************************-->
+    <!--蓝牙设备扫描时以白名单内的字段作为设备名前缀的设备将被添加到蓝牙设备扫描列表中，其余的过滤。-->
+    <!--请在名单中设置所要扫描到的设备名前缀-->
+    <!--体温计的设备名前缀白名单-->
+    <string-array name="thermometer_dev_name_prefixes">
+        <item>"LinkTC"</item>
+        <item>"RuihTC"</item>
+    </string-array>
+    <!--健康检测仪的设备名前缀白名单-->
+    <string-array name="health_monitor_dev_name_prefixes">
+        <item>"HC02"</item>
+    </string-array>
+    <!--**********************************************************-->
+
+
+    <!--牙刷-->
+    <string-array name="arr_auth_state">
+        <item>用户授权</item>
+        <item>待授权</item>
+        <item>已授权</item>
+    </string-array>
+
+    <string-array name="arr_set_state">
+        <item>设置成功</item>
+        <item>设置失败</item>
+        <item>设置禁用</item>
+    </string-array>
+
+    <string-array name="arr_power">
+        <item>未知</item>
+        <item>低电关机</item>
+        <item>电量正常</item>
+        <item>低电提醒</item>
+    </string-array>
+
+    <string-array name="arr_duration">
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+        <item>150</item>
+        <item>160</item>
+        <item>170</item>
+        <item>180</item>
+        <item>190</item>
+        <item>200</item>
+        <item>210</item>
+        <item>220</item>
+        <item>230</item>
+        <item>240</item>
+        <item>250</item>
+        <item>260</item>
+        <item>270</item>
+        <item>280</item>
+        <item>290</item>
+        <item>300</item>
+    </string-array>
+
+
+    <string-array name="arr_mode">
+        <item>清洁模式</item>
+        <item>美白模式</item>
+        <item>抛光模式</item>
+        <item>牙龈护理</item>
+    </string-array>
+</resources>

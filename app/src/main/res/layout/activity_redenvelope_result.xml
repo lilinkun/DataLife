@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/red">
+
+        <LinearLayout
+            android:id="@+id/iv_head_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_back_white"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:text="红包"/>
+
+        <TextView
+            android:id="@+id/tv_myenvelope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone"
+            android:text="我的红包"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_red_envelope_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_result_red_envelop_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_marginBottom="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_red_envelope_have_result"/>
+
+
+        <TextView
+            android:id="@+id/tv_red_envelope_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜您获得红包!"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="@color/red_envelope_orange_text_bg"
+            android:layout_marginTop="110dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_red_envelope_tip"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/tv_red_envelope_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_24"
+                android:textColor="@color/red_envelope_orange_text_bg"
+                android:text="10"/>
+
+            <TextView
+                android:id="@+id/tv_red_envelope_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/red_envelope_orange_text_bg"
+                android:text="元"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_head_small">
+
+    <RelativeLayout
+        android:id="@+id/rl_nav_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+    <com.datalife.datalife.widget.RoundImageView
+        android:id="@+id/iv_nav_user"
+        android:layout_width="@dimen/nav_image_userface"
+        android:layout_height="@dimen/nav_image_userface"
+        />
+        <ImageView
+            android:id="@+id/ic_nav_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_delete_user"
+            android:layout_alignRight="@+id/iv_nav_user"
+            android:layout_alignTop="@+id/iv_nav_user"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nav_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_nav_user"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bind_brush"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_bindmember_brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_33"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_size_18"
+            android:text="确定更换刷头"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_33"
+            android:layout_marginBottom="@dimen/margin_33"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_bg_left"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_text_bg"
+                android:text="确定"
+                android:background="@drawable/btn_select_left"/>
+
+            <Button
+                android:id="@+id/btn_bg_right"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_text_bg"
+                android:text="取消"
+                android:layout_marginLeft="-1dp"
+                android:background="@drawable/btn_select_right"/>
+
+        </LinearLayout>
+</LinearLayout>

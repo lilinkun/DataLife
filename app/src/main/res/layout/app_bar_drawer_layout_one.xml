@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.datalife.datalife.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bg_toolbar_title"
+            android:visibility="gone"
+            app:subtitle=" "
+            app:title=" "
+            app:navigationIcon="@mipmap/ic_homepage_userinfo"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/white"
+                android:text="@string/apptab_homepage"/>
+
+            <!--<TextView
+                android:id="@+id/tv_testing_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/testing_report"
+                android:layout_marginRight="@dimen/margin_10"
+                android:visibility="gone"
+                android:layout_gravity="right"/>-->
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/activity_main"/>
+
+    <include layout="@layout/content_drawer_layout_one"/>
+
+</LinearLayout>

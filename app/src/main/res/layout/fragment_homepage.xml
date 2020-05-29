@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.datalife.datalife.widget.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        custom:text_title="@string/apptab_homepage"
+        custom:left_visibility="false">
+
+    </com.datalife.datalife.widget.CustomTitleBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+    <com.datalife.datalife.widget.BannerM
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="155dp">
+    </com.datalife.datalife.widget.BannerM>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_homepageiv"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/me_gray"
+            android:layout_marginBottom="@dimen/margin_head_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_14"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black_text_bg"
+            android:text="@string/instrument_testing"/>
+
+            <TextView
+                android:id="@+id/tv_test_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_15"
+                android:textColor="@color/black_text_bg"
+                android:text="检测详情>"/>
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_14"
+            android:paddingRight="@dimen/padding_14">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/me_gray"
+            android:layout_marginTop="@dimen/margin_head_small"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/margin_head_small"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_large_big"
+        android:paddingRight="@dimen/padding_large_big"
+        android:layout_below="@+id/ic_homepageiv"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health_self_testing"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ic_homepage_detection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_taste_detection" />
+                <TextView
+                    android:id="@+id/tv_homepage_detection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ic_homepage_detection"
+                    android:layout_centerHorizontal="true"
+                    android:text="手机趣味检测"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/ic_homepage_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_health_question"/>
+                <TextView
+                    android:id="@+id/tv_homepage_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ic_homepage_question"
+                    android:layout_centerHorizontal="true"
+                    android:text="健康问答检测"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/me_gray"
+            android:layout_marginTop="@dimen/margin_head_small"
+            android:layout_marginBottom="@dimen/margin_head_small"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_14"
+            android:paddingRight="@dimen/padding_14"
+            android:layout_below="@+id/ic_homepageiv"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_info"/>
+
+            <com.datalife.datalife.widget.ListViewForScrollView
+                android:id="@+id/ic_health_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <!--<com.datalife.datalife.widget.LX_LoadListView
+                android:id="@+id/ic_health_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.datalife.datalife.widget.LX_LoadListView>-->
+
+            <LinearLayout
+                android:id="@+id/ll_more_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_little"
+                    android:text="更多"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

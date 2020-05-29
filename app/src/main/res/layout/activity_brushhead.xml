@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_brush"
+    android:orientation="vertical">
+    
+    <com.datalife.datalife.widget.CustomTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:img_left="@mipmap/ic_back_white"
+        app:text_title="@string/brush_head_info"
+        >
+
+    </com.datalife.datalife.widget.CustomTitleBar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_brushhead_top"
+        android:layout_gravity="center">
+
+        <com.datalife.datalife.widget.PercentCircle
+            android:id="@+id/brush_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_rechange_brush_head"
+            android:layout_width="225dp"
+            android:layout_height="47dp"
+            android:text="@string/rechange_brush_head"
+            android:textColor="@color/ecg_bg"
+            android:textSize="@dimen/text_size_18"
+            android:background="@mipmap/ic_btn_circle"
+            android:layout_below="@+id/brush_circle"
+            android:layout_marginTop="@dimen/margin_50"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_buy_brush_head"
+            android:layout_width="225dp"
+            android:layout_height="47dp"
+            android:text="@string/buy_brush_head"
+            android:textColor="@color/ecg_bg"
+            android:textSize="@dimen/text_size_18"
+            android:background="@mipmap/ic_btn_circle"
+            android:layout_below="@+id/btn_rechange_brush_head"
+            android:layout_marginTop="@dimen/margin_40"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

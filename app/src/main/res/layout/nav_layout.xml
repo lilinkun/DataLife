@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_nav_background"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal">
+
+    <com.datalife.datalife.widget.RoundImageView
+        android:id="@+id/iv_account"
+        android:layout_width="@dimen/nav_image_size"
+        android:layout_height="@dimen/nav_image_size"
+        android:layout_marginTop="@dimen/margin_40"
+        android:src="@mipmap/ic_family_girl"/>
+
+    <TextView
+        android:id="@+id/tv_nav_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textColor="@color/white"
+        android:text="peter"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_usermanage"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridView
+            android:id="@+id/gv_nav"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_13"
+            android:numColumns="3"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true">
+
+        </GridView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:padding="@dimen/padding_big">
+
+        <ImageView
+            android:id="@+id/ic_nav_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_nav_plus"/>
+
+        <ImageView
+            android:id="@+id/ic_nav_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_nav_subtract"
+            android:paddingLeft="@dimen/margin_20"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

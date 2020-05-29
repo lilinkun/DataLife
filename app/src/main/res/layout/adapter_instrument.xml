@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_fat_testing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_2"
+        android:layout_marginLeft="@dimen/margin_2"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_testname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_small"/>
+
+        <TextView
+            android:id="@+id/tv_testname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/datalife_body_fat"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:background="@drawable/bg_image"/>
+
+    </RelativeLayout>
+</LinearLayout>

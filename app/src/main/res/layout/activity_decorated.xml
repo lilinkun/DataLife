@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:liguo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_total"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <com.datalife.datalife.widget.CustomTitleBar
+        android:id="@+id/custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        liguo:text_title="@string/history_date"
+        >
+    </com.datalife.datalife.widget.CustomTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/rl_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_membername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_13"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@color/black_text_bg"
+            />
+
+        <com.datalife.datalife.widget.RoundImageView
+            android:id="@+id/roundiv_member"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_15"/>
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.datalife.datalife.widget.CustomCalendar
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            liguo:mMonthRowL="@mipmap/ic_left_arrow"
+            liguo:mMonthRowR="@mipmap/ic_test_right_arrow"
+            liguo:mMonthRowSpac="20dip"
+            liguo:mTextSizeMonth="20sp"
+            liguo:mTextSizeWeek="17sp"
+            liguo:mTextSizeDay="17sp"
+            liguo:mTextSizePre="10sp"
+            liguo:mTextColorMonth="#43a6de"
+            liguo:mTextColorWeek="#9e9e9d"
+            liguo:mSelectWeekTextColor="#f67633"
+            liguo:mTextColorDay="#686768"
+            liguo:mTextColorPreFinish="@color/bg_toolbar_title"
+            liguo:mTextColorPreUnFinish="#60ba8d"
+            liguo:mTextColorPreNull="#cecdcd"
+            liguo:mSelectTextColor="#ffffff"
+            liguo:mMonthSpac="10dip"
+            liguo:mLineSpac="12dip"
+            liguo:mTextSpac="6dp"
+            liguo:mCurrentBg="#6E6E6E"
+            liguo:mCurrentBgStrokeWidth="1.5dip"
+            liguo:mCurrentBgDashPath="@array/customCalendar_currentDay_bg_DashPath"
+            liguo:mSelectBg="#43a6de"
+            liguo:mSelectRadius="20dp" />
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/grey_bg"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/grey_bg"/>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_bg"
+                    android:visibility="gone"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+        <!--</LinearLayout>-->
+        </LinearLayout>
+
+</LinearLayout>

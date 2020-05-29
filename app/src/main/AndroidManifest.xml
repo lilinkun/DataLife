@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.datalife.datalife">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <meta-data
+        android:name="appkey"
+        android:value="902f8741c0814966b86d27326a14c265" />
+    <meta-data
+        android:name="appsecret"
+        android:value="cb6485aab56449afa5c65452a322cef2" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher3"
+        android:label="@string/app_name"
+        android:name=".app.ProApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SimplebackActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.HealthMonitorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".activity.ECGLargeChartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".activity.ShowDownloadDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.RecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.FatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.BasicActivityDecorated"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.FatTestHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DecoratedActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ToothActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ToothHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ToothDevActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.BlueToothDevActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.FatCalendarActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DataTestActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.DatatestDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.BrushHeadActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ToothBindActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MainChangeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.RedEnvelopeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.RedEnvelopeResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MyRedEnvelopeListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".wxapi.WXEntryActivity"
+            android:exported="true"/>
+
+
+        <service android:name=".service.HcService"/>
+        <service android:name="aicare.net.cn.iweightlibrary.wby.WBYService"/>
+        <service android:name="aicare.net.cn.toothbrushlibrary.toothbrush.ToothbrushService"/>
+
+        <receiver android:name=".receiver.NetworkBroadcast">
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

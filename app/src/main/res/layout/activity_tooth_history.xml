@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:datalife="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tooth_gray"
+    android:orientation="vertical">
+
+    <com.datalife.datalife.widget.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        datalife:text_title="@string/history_record"
+        datalife:img_left="@drawable/backicon">
+
+    </com.datalife.datalife.widget.CustomTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_mychart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:background="@color/bg_toolbar_title">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_15"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tooth_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:textColor="@color/black_text_bg"
+                android:textSize="@dimen/text_size_15"
+                android:text="@string/tooth_total_time"/>
+
+                <View
+                    android:id="@+id/tooth_total_time_line"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_tooth_total_time"
+                    android:layout_alignTop="@+id/tv_tooth_total_time"
+                    android:background="@color/black"
+                    android:layout_toRightOf="@+id/tv_tooth_total_time"
+                    android:layout_marginLeft="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/tv_tooth_total_time_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooth_total_time_hint"
+                    android:layout_toRightOf="@+id/tooth_total_time_line"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginLeft="@dimen/margin_15"/>
+
+            </RelativeLayout>
+
+
+            <ProgressBar
+                android:id="@+id/pb_total_time"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/margin_10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_bg_blue"
+                android:max="40"
+                android:progress="0"/>
+
+            <TextView
+                android:id="@+id/tv_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/tv_tooth_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:textColor="@color/black_text_bg"
+                    android:textSize="@dimen/text_size_15"
+                    android:text="@string/tooth_range"/>
+
+                <View
+                    android:id="@+id/tooth_range_line"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_tooth_range"
+                    android:layout_alignTop="@+id/tv_tooth_range"
+                    android:background="@color/black"
+                    android:layout_toRightOf="@+id/tv_tooth_range"
+                    android:layout_marginLeft="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/tv_tooth_range_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooth_range_hint"
+                    android:layout_toRightOf="@+id/tooth_range_line"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginLeft="@dimen/margin_15"/>
+
+            </RelativeLayout>
+
+
+            <ProgressBar
+                android:id="@+id/pb_range"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/margin_10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_bg_blue"
+                android:max="20"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷牙范围:"/>
+
+            <TextView
+                android:id="@+id/tv_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未达标"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_15">
+
+                <TextView
+                    android:id="@+id/tv_tooth_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:textColor="@color/black_text_bg"
+                    android:textSize="@dimen/text_size_15"
+                    android:text="@string/tooth_average"/>
+
+                <View
+                    android:id="@+id/tooth_average_line"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_tooth_average"
+                    android:layout_alignTop="@+id/tv_tooth_average"
+                    android:background="@color/black"
+                    android:layout_toRightOf="@+id/tv_tooth_average"
+                    android:layout_marginLeft="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/tv_tooth_average_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tooth_average_hint"
+                    android:layout_toRightOf="@+id/tooth_average_line"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginLeft="@dimen/margin_15"/>
+
+            </RelativeLayout>
+
+
+            <ProgressBar
+                android:id="@+id/pb_brush_even"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/margin_10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_bg_blue"
+                android:max="40"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刷牙均匀度:"/>
+
+                <TextView
+                    android:id="@+id/tv_even"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标准"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_tooth_tip"
+            android:layout_marginRight="@dimen/margin_15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/gray_test"
+            android:text="@string/tooth_tip"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="建议两边刷牙时长不要相差过大，同事控制好刷牙力度。每边刷牙3次（早饭后，午饭后，晚上睡前），每次刷牙2分钟，用温水刷牙，认真刷牙龈线对牙缝进行深层次清洁，在用漱口水漱口抑制细菌生长。"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
